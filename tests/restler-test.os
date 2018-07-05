@@ -74,8 +74,7 @@
 	ЗаглушкаСоединения = Мок.Получить(Новый HTTPСоединение("localhost"));
 	
 	ЗаголовкиОтвета = Новый Соответствие;
-	ЗаголовкиОтвета["Link"] = "Link: <https://api.github.com/search/code?q=addClass+user%3Amozilla&page=2>; rel=""next"",
-	|<https://api.github.com/search/code?q=addClass+user%3Amozilla&page=34>; rel=""last""";
+	ЗаголовкиОтвета["Link"] = "Link: <https://api.github.com/search/code?q=addClass+user%3Amozilla&page=2>; rel=""next"",<https://api.github.com/search/code?q=addClass+user%3Amozilla&page=34>; rel=""last""";
 	
 	ЗаглушкаОтвета = Мок.Получить(Тип("HTTPОтвет"));
 	ЗаглушкаОтвета.КодСостояния = 200;
